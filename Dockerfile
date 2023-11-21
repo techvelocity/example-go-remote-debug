@@ -1,4 +1,4 @@
-FROM golang:1.18 AS build
+FROM golang:1.21 AS build
 WORKDIR /
 COPY . .
 RUN CGO_ENABLED=0 go install github.com/go-delve/delve/cmd/dlv@latest
